@@ -21,8 +21,8 @@
         return this.numberOfValues
     };
 
-    SinglyLinkedList.prototype.add = function () {
-        var node = new Node(data);
+    SinglyLinkedList.prototype.add = function (data) {
+        let node = new Node(data);
 
         if(!this.head) {
             this.head = node;
@@ -35,9 +35,9 @@
         this.numberOfValues++;
     };
 
-    SinglyLinkedList.prototype.remove = function (date) {
-        var previous = this.head;
-        var current = this.head;
+    SinglyLinkedList.prototype.remove = function (data) {
+        let previous = this.head;
+        let current = this.head;
 
         while (current) {
             if(current.data === data) {
@@ -50,7 +50,7 @@
                 }
 
                 previous.next = current.next;
-                this.numberOfValue--;
+                this.numberOfValues--;
             } else {
                 previous = current;
             }
@@ -59,7 +59,12 @@
 
         }
 
-    }
+    };
+
+    let list = new SinglyLinkedList();
+    console.log(list);
+    list.add(5);
+    console.log(list);
 
 
 </script>

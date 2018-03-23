@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Очередь</title>
+</head>
+<body>
+<script>
+
+    function Queue() {
+        this.queue = [];
+    }
+
+    Queue.prototype.enqueue = function (value) {
+        this.queue.push(value);
+    };
+
+    Queue.prototype.dequeue = function () {
+        this.queue.shift();
+    };
+
+    Queue.prototype.peek = function () {
+        return this.queue[0];
+    }
+
+</script>
+</body>
+</html>
