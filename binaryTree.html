@@ -23,8 +23,10 @@
             this.root = node;
         } else {
             let current = this.root;
+            console.log(current);
 
             while (current) {
+                console.log(current);
                 if(node.data < current.data) {
                     if(!current.left) {
                         current.left = node;
@@ -77,15 +79,16 @@
 
 
     let tree = new BinarySearchTree();
-    console.log(tree.root);
     tree.add(5);
-    console.log(tree);
-    tree.add(4);
     console.log(tree);
     tree.add(3);
     console.log(tree);
-    tree.add(6);
-    console.log(tree.left);
+    // tree.add(4);
+    // console.log(tree);
+    // tree.add(3);
+    // console.log(tree);
+    // tree.add(6);
+    // console.log(tree.left);
 
 
 

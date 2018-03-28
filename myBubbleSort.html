@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyBubbleSort</title>
+</head>
+<body>
+<script>
+    function bubbleSort(array) {
+        let length = array.length;
+
+        for (let i =0; i < length - 1; i++) {
+            for (let j = 0; j < length - i; j++){
+                if(array[j] > array[j+1]) {
+                    let newFirstNumber = array[j];
+
+                    array[j] = array[j+1];
+
+                    array[j+1] = newFirstNumber;
+                }
+            }
+        }
+        return array;
+    }
+
+    console.log(bubbleSort([2,7,14,3,8,1]))
+</script>
+</body>
+</html>

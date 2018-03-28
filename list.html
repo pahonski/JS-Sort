@@ -32,6 +32,9 @@
             this.tail = node;
         }
 
+        console.log(this.tail);
+        console.log(this);
+
         this.numberOfValues++;
     };
 
@@ -62,9 +65,12 @@
     };
 
     let list = new SinglyLinkedList();
-    console.log(list);
+
     list.add(5);
-    console.log(list);
+
+    list.add(4);
+
+    list.add(7);
 
 
 </script>
